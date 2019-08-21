@@ -363,5 +363,109 @@ template {
           box-sizing: border-box;
 }
 
+body {
+  color: #323232;
+  font-family: 'Roboto Regular', serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 20px;
+}
+
 /*Подключаем header*/
+.check {
+  background-color: #f7f7f7;
+}
+
+.check-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0 10px;
+}
+
+.check-block__phone {
+  margin-right: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check-block__addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check__image {
+  margin-right: 12px;
+}
+
+.check__phone {
+  text-decoration: none;
+  color: #323232;
+  margin-top: 2px;
+}
+
+.check__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.check__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+  font-weight: 500;
+}
+
+.check__slesh {
+  display: block;
+  width: 1px;
+  height: 17px;
+  margin-left: 11px;
+  margin-right: 9px;
+}
+
+.check__check {
+  letter-spacing: 0.4px;
+}
 /*# sourceMappingURL=style.css.map */
