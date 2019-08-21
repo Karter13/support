@@ -88,10 +88,10 @@
     +bold
     font-weight: 599
     position: relative   
-    &:hover
-      color: $menu-color
-      &:after
-        display: block 
+    // &:hover
+    //   color: $menu-color
+    //   &:after
+    //     display: block 
     &:after   
       content: ""
       position: absolute
@@ -165,7 +165,13 @@
       &__paragraph
         margin-right: 25px
 
-// @media (mix-width: 991px)          
+@media (mix-width: 991px)
+  .navbar
+     &__paragraph       
+      &:hover
+        color: $menu-color
+        &:after
+          display: block        
 
 @media (max-width: 991px)   
   .navbar-menu.navbar-menu_active   
@@ -200,7 +206,7 @@
       font-size: 13px
 @media (max-width: 575px) 
   .navbar-menu.navbar-menu_active 
-    height: 14vh
+    height: 18vh
   .check
     &__contacts 
       display: none
@@ -215,6 +221,8 @@
         flex-direction: column
         justify-content: center
         align-items: center
+      &__paragraph
+        margin-top: 5px  
         
 
           

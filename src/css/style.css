@@ -565,14 +565,6 @@ img {
   position: relative;
 }
 
-.navbar__paragraph:hover {
-  color: #c3759e;
-}
-
-.navbar__paragraph:hover:after {
-  display: block;
-}
-
 .navbar__paragraph:after {
   content: "";
   position: absolute;
@@ -677,6 +669,15 @@ img {
   }
 }
 
+@media (mix-width: 991px) {
+  .navbar__paragraph:hover {
+    color: #c3759e;
+  }
+  .navbar__paragraph:hover:after {
+    display: block;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-menu.navbar-menu_active {
     display: block;
@@ -717,7 +718,7 @@ img {
 
 @media (max-width: 575px) {
   .navbar-menu.navbar-menu_active {
-    height: 14vh;
+    height: 18vh;
   }
   .check__contacts {
     display: none;
@@ -740,6 +741,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar-block__paragraph {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
