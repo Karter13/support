@@ -930,4 +930,70 @@ img {
 }
 
 /*Подключаем experience*/
+.experience-block {
+  padding: 40px 0;
+}
+
+.experience__title {
+  font-size: 46px;
+  position: relative;
+}
+
+.experience__title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 92px;
+  height: 3px;
+  background-color: #939393;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.experience-card {
+  width: 32%;
+  text-align: center;
+}
+
+.experience-card__image {
+  display: block;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.experience-card__title {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 42px;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.experience-card__text {
+  max-width: 372px;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 44px;
+  color: #939393;
+}
+
+.experience-card__link {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+
+.experience-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */

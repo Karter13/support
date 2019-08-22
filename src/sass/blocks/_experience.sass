@@ -1,0 +1,43 @@
+.experience
+  &-block
+    padding: 40px 0
+  &__title  
+    font-size: 46px
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 0
+      bottom: -18px      
+      width: 92px
+      height: 3px
+      background-color: $experience-text
+      +bold 
+  &-card
+    width: 32%
+    text-align: center
+    &__image
+      display: block
+      margin: auto
+      margin-bottom: 35px
+    &__title
+      display: block
+      font-size: 25px  
+      margin-bottom: 42px    
+      +bold
+    &__text
+      max-width: 372px
+      width: 100%
+      display: block
+      font-size: 15px
+      margin-bottom: 44px
+      color: $experience-text
+    &__link
+      display: block
+      font-size: 14px
+      margin-bottom: 45px
+    &s
+      display: flex
+      justify-content: space-between
+      align-items: center  
+    
