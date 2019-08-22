@@ -669,7 +669,7 @@ img {
   }
 }
 
-@media (mix-width: 991px) {
+@media (min-width: 991px) {
   .navbar__paragraph:hover {
     color: #c3759e;
   }
@@ -691,7 +691,7 @@ img {
   .menu-btn {
     right: 80px;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 6px;
     display: block;
   }
   .navbar-block__paragraph {
@@ -745,5 +745,76 @@ img {
   .navbar-block__paragraph {
     margin-top: 5px;
   }
+}
+
+/*Подключаем baner*/
+.baner {
+  height: 100vw;
+  background: url("../img/baner/baner_fon1.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+.baner-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.baner-content {
+  max-width: 620px;
+  width: 50%;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 25%;
+}
+
+.baner__subtitle {
+  display: block;
+  font-size: 25px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
+
+.baner__title {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 88px;
+  text-transform: uppercase;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.baner__text {
+  display: block;
+  font-size: 16px;
+  margin-left: 6px;
+  line-height: 25px;
+}
+
+.baner__button {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
