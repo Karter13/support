@@ -1,29 +1,29 @@
-.baner 
-  // background-color: #9e96bc
-  height: 916px
-  height: 100%  
-  background:  url('../img/baner/baner_fon1.jpg') no-repeat 
+.baner      
+  background:  url('../img/baner/baner_fon.png') no-repeat 
   background-size: 100% auto
+  background-size: cover
   &-block    
     min-width: 100%
     display: flex
     justify-content: flex-end
+    padding-top: 25%  
+    padding-bottom: 28%
   &-content 
     max-width: 620px
     width: 50%
     color: $white-color
     display: flex
+    flex-direction: column  
     justify-content: center
-    align-items: flex-start
-    flex-direction: column    
-    padding-top: 300px
-    padding-bottom: 330px
+    align-items: flex-start       
+      
   &__subtitle
     display: block
     font-size: 25px
     letter-spacing: 0.1px
     text-transform: uppercase
   &__title  
+    display: block
     margin-top: 7px
     margin-bottom: 7px
     font-size: 88px
@@ -35,6 +35,7 @@
     margin-left: 6px
     line-height: 25px
   &__button
+    display: block
     border: none
     outline: none
     font-size: 14px
@@ -47,12 +48,15 @@
 
 @media (max-width: 1300px)  
   .baner  
-    &-content
-      padding-top: 200px
+    &-block 
+      padding-top: 20%  
+      padding-bottom: 25%
+      
 @media (max-width: 1199px)  
   .baner  
-    &-content
-      padding-top: 150px   
+    &-block 
+      padding-top: 18%  
+      padding-bottom: 22%       
     &__subtitle     
       font-size: 16px          
     &__title       
@@ -61,9 +65,9 @@
       font-size: 13px       
 @media (max-width: 991px)  
   .baner  
-    &-content
-      padding-top: 80px 
-      padding-bottom: 135px  
+    &-block 
+      padding-top: 15%  
+      padding-bottom: 20%      
     &__subtitle     
       font-size: 14px          
     &__title        
@@ -77,14 +81,14 @@
       padding: 20px 35px 
 @media (max-width: 767px)  
   .baner  
-    &-block
+    &-block 
+      padding-top: 12%  
+      padding-bottom: 17% 
       justify-content: center
       align-items: center     
     &-content
       align-items: center
-      text-align: center
-      padding-top: 30px 
-      padding-bottom: 135px  
+      text-align: center            
     &__subtitle     
       font-size: 13px
       letter-spacing: 0.1px     
@@ -100,11 +104,11 @@
 @media (max-width: 575px)  
   .baner  
     &-block
-      width: 100%   
+      width: 100% 
+      padding-top: 10%  
+      padding-bottom: 15% 
     &-content 
-      width: 100%     
-      padding-top: 10px 
-      padding-bottom: 100px  
+      width: 100%             
     &__subtitle     
       font-size: 11px
       letter-spacing: 0.1px     

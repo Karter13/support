@@ -749,10 +749,9 @@ img {
 
 /*Подключаем baner*/
 .baner {
-  height: 916px;
-  height: 100%;
-  background: url("../img/baner/baner_fon1.jpg") no-repeat;
+  background: url("../img/baner/baner_fon.png") no-repeat;
   background-size: 100% auto;
+  background-size: cover;
 }
 
 .baner-block {
@@ -763,6 +762,8 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 25%;
+  padding-bottom: 28%;
 }
 
 .baner-content {
@@ -772,18 +773,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 300px;
-  padding-bottom: 330px;
 }
 
 .baner__subtitle {
@@ -794,6 +793,7 @@ img {
 }
 
 .baner__title {
+  display: block;
   margin-top: 7px;
   margin-bottom: 7px;
   font-size: 88px;
@@ -810,6 +810,7 @@ img {
 }
 
 .baner__button {
+  display: block;
   border: none;
   outline: none;
   font-size: 14px;
@@ -823,14 +824,16 @@ img {
 }
 
 @media (max-width: 1300px) {
-  .baner-content {
-    padding-top: 200px;
+  .baner-block {
+    padding-top: 20%;
+    padding-bottom: 25%;
   }
 }
 
 @media (max-width: 1199px) {
-  .baner-content {
-    padding-top: 150px;
+  .baner-block {
+    padding-top: 18%;
+    padding-bottom: 22%;
   }
   .baner__subtitle {
     font-size: 16px;
@@ -844,9 +847,9 @@ img {
 }
 
 @media (max-width: 991px) {
-  .baner-content {
-    padding-top: 80px;
-    padding-bottom: 135px;
+  .baner-block {
+    padding-top: 15%;
+    padding-bottom: 20%;
   }
   .baner__subtitle {
     font-size: 14px;
@@ -867,6 +870,8 @@ img {
 
 @media (max-width: 767px) {
   .baner-block {
+    padding-top: 12%;
+    padding-bottom: 17%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -879,8 +884,6 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 135px;
   }
   .baner__subtitle {
     font-size: 13px;
@@ -903,11 +906,11 @@ img {
 @media (max-width: 575px) {
   .baner-block {
     width: 100%;
+    padding-top: 10%;
+    padding-bottom: 15%;
   }
   .baner-content {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 100px;
   }
   .baner__subtitle {
     font-size: 11px;
@@ -925,4 +928,6 @@ img {
     padding: 13px 30px;
   }
 }
+
+/*Подключаем experience*/
 /*# sourceMappingURL=style.css.map */
