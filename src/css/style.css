@@ -718,7 +718,7 @@ img {
 
 @media (max-width: 575px) {
   .navbar-menu.navbar-menu_active {
-    height: 18vh;
+    height: 23vh;
   }
   .check__contacts {
     display: none;
@@ -749,13 +749,14 @@ img {
 
 /*Подключаем baner*/
 .baner {
-  height: 100vw;
+  height: 916px;
+  height: 100%;
   background: url("../img/baner/baner_fon1.jpg") no-repeat;
   background-size: 100% auto;
 }
 
 .baner-block {
-  width: 100%;
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,7 +782,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 25%;
+  padding-top: 300px;
+  padding-bottom: 330px;
 }
 
 .baner__subtitle {
@@ -811,10 +813,116 @@ img {
   border: none;
   outline: none;
   font-size: 14px;
+  margin-top: 10px;
+  margin-left: 7px;
   border-radius: 25px;
-  padding: 20px 35px;
+  padding: 17px 35px;
   text-transform: uppercase;
   font-family: 'Roboto Bold', serif;
   font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .baner-content {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .baner-content {
+    padding-top: 150px;
+  }
+  .baner__subtitle {
+    font-size: 16px;
+  }
+  .baner__title {
+    font-size: 65px;
+  }
+  .baner__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .baner-content {
+    padding-top: 80px;
+    padding-bottom: 135px;
+  }
+  .baner__subtitle {
+    font-size: 14px;
+  }
+  .baner__title {
+    font-size: 55px;
+  }
+  .baner__text {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+  .baner__button {
+    font-size: 13px;
+    padding: 20px 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .baner-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .baner-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 135px;
+  }
+  .baner__subtitle {
+    font-size: 13px;
+    letter-spacing: 0.1px;
+  }
+  .baner__title {
+    font-size: 50px;
+  }
+  .baner__text {
+    font-size: 11px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+  .baner__button {
+    font-size: 13px;
+    padding: 18px 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .baner-block {
+    width: 100%;
+  }
+  .baner-content {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+  .baner__subtitle {
+    font-size: 11px;
+    letter-spacing: 0.1px;
+  }
+  .baner__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .baner__text {
+    display: none;
+  }
+  .baner__button {
+    font-size: 11px;
+    padding: 13px 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
