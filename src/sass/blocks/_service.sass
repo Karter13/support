@@ -1,0 +1,27 @@
+.service
+  background-color: $contacts-color
+  &-block
+    padding: 85px 0
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center  
+    &__title
+      font-size: 41px
+      position: relative
+      +bold
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: -18px      
+        width: 92px
+        height: 3px
+        background-color: $line-color
+  &-menu
+    display: flex
+    justify-content: flex-end
+    align-items: center    
+
+
+
