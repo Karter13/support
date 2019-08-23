@@ -1,0 +1,93 @@
+.connection
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 55px 0 53px
+    &__content
+      max-width: 725px
+      width: 100%
+    &__title    
+      margin: 0
+      display: inline-block
+      font-size: 41px
+      margin-bottom: 25px
+      +bold 
+    &__text          
+      margin: 0 0 0 3px
+      display: block
+      font-size: 14px
+      +bold 
+  &__menu
+    display: flex
+    justify-content: flex-end
+    align-items: center 
+    padding: 0     
+  &__button
+    list-style: none
+    margin-left: 23px 
+    &:first-child
+      margin-left: 0 
+  &__link
+    display: block
+    text-decoration: none
+    font-size: 14px
+    text-transform: uppercase    
+    color: $white-color
+    border-radius: 25px
+    +bold 
+    &_ferst
+      padding: 17px 37px
+      background-color: $menu-color
+    &_last
+      padding: 17px 20px
+      background-color: $futer-color
+
+@media (max-width: 1210px)  
+  .connection  
+    &__button        
+      margin-left: 15px  
+      &:first-child
+        margin-left: 0  
+@media (max-width: 1199px) 
+  .connection  
+    &-block
+      text-align: center
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      &__content
+        margin-bottom: 15px
+@media (max-width: 767px) 
+  .connection      
+    &-block 
+      padding: 40px 0     
+      &__content
+        max-width: 724px
+      &__title 
+        font-size: 35px 
+@media (max-width: 575px) 
+  .connection
+    &__menu
+      flex-direction: column  
+    &__button
+      margin-left: 0
+      margin-bottom: 10px   
+    &__link
+      font-size: 12px    
+      &_ferst
+        padding: 17px 37px      
+      &_last
+        padding: 17px 20px
+          
+
+
+
+  
+
+
+
+
+
+        
+
