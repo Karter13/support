@@ -2,6 +2,8 @@
   background-color: $contacts-color
   &-block
     padding: 43px 0 136px
+    // display: flex
+    // flex-direction: column
   &-header
     display: flex
     justify-content: space-between
@@ -28,10 +30,10 @@
       font-size: 14px
       color: $text-color      
       +bold
-      &:hover
-        background-color: $menu-color 
-        border-radius: 20px 
-        color: $white-color   
+      // &:hover
+      //   background-color: $menu-color 
+      //   border-radius: 20px 
+      //   color: $white-color   
     &__nav
       margin-top: -35px      
   &-menu
@@ -41,6 +43,7 @@
   &-card
     max-width: 23%
     width: 100% 
+    max-height: 529px
     height: 100%
     display: flex 
     background-color: $white-color    
@@ -48,16 +51,11 @@
     flex-direction: column
     text-align: center
     padding-bottom: 37px
-    &:hover
-      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
+    // &:hover
+    //   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
     &_active
       color: $white-color
-      background-color: $menu-color 
-    &__content
-      // display: flex  
-      // flex-direction: column
-      // justify-content: center
-      // align-items: flex-start
+      background-color: $menu-color     
     &__image
       margin-bottom: 34px
       width: 100%
@@ -95,12 +93,96 @@
         +bold  
       &_active
         color: $white-color
-    &s
-      max-height: 529px
+    &s      
       height: 100%
       display: flex
       justify-content: space-between
       align-items: center  
+
+@media (min-width: 991px)
+  .service
+    &-header
+      &__link      
+        &:hover
+          background-color: $menu-color 
+          border-radius: 20px 
+          color: $white-color  
+    &-card
+      &:hover
+       box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)  
+@media (max-width: 1199px)
+  .service    
+    &-block
+      padding: 40px 0 120px
+@media (max-width: 991px)
+  .service 
+    &-block
+      padding: 20px 0 60px
+    &__image
+      width: 100%              
+    &-card
+      margin-left: 5%
+      max-width: 32%
+      margin-bottom: 35px
+      &s
+        justify-content: space-around
+        flex-wrap: wrap
+    &-header
+      flex-direction: column  
+      justify-content: center
+      align-items: center  
+      margin-bottom: 20px
+      &__title     
+        &:after          
+          left: 80px
+          bottom: -18px 
+@media (max-width: 767px) 
+  .service 
+    &-header
+      &__title
+        font-size: 35px
+        &:after          
+          left: 65px
+          bottom: -18px 
+      &__link
+        padding: 11px 18px 11px
+    &-card
+      margin-left: 10%
+      max-width: 45%
+      margin-bottom: 35px
+      &__image
+        margin-bottom: 15px
+@media (max-width: 575px) 
+  .service 
+    &-menu
+      padding: 0
+      flex-direction: column  
+      justify-content: center
+      align-items: center
+    &-header   
+      &__button
+        margin-bottom: 10px   
+      &__link
+        font-size: 15px
+        padding: 11px 7px 11px
+      &__title
+        margin-bottom: 55px
+    &-card      
+      max-width: 70%
+      margin-bottom: 35px
+      &__image
+        margin-bottom: 15px
+      &__subtitle
+        display: none          
+
+  
+
+                
+         
+
+
+
+       
       
       
 
