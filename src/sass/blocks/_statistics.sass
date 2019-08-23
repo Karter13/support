@@ -1,0 +1,105 @@
+.statistics
+  background-color: $statistic-color  
+  &-block
+    max-width: 23%
+    width: 100%     
+    display: flex        
+    align-items: center
+    flex-direction: column
+    // text-align: center
+    &s 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 137px 0
+  &__image
+    margin-bottom: 17px 
+    &_ferst      
+      margin-left: -41px
+    &_second 
+      margin-left: -32px
+    &_last 
+      margin-left: 11px
+  &__count
+    font-size: 54px
+    color: $futer-color
+    margin-bottom: 7px
+    +bold
+    &_ferst
+      margin-left: -41px
+    &_second
+      margin-left: -32px
+    &_last  
+      margin-left: 11px
+  &__name
+    font-size: 20px
+    color: $white-color
+    &_ferst
+      margin-left: -41px
+    &_second
+      margin-left: -32px
+    &_last  
+      margin-left: 11px
+
+@media (max-width: 1350px)      
+  .statistics
+    &__image      
+      &_ferst      
+        margin-left: 0px
+      &_second 
+        margin-left: 0px
+      &_last 
+        margin-left: 0px
+    &__count      
+      &_ferst
+        margin-left: 0px
+      &_second
+        margin-left: 0px
+      &_last  
+        margin-left: 0px
+    &__name      
+      &_ferst
+        margin-left: 0px
+      &_second
+        margin-left: 0px
+      &_last  
+        margin-left: 0px
+@media (max-width: 1199px)  
+  .statistics  
+    &-blocks 
+      padding: 110px 0 
+@media (max-width: 991px) 
+  .statistics  
+    &-blocks 
+      padding: 90px 0
+@media (max-width: 767px)
+  .statistics 
+    &__image
+      margin-bottom: 10px 
+    &__count
+      font-size: 50px      
+      margin-bottom: 4px 
+    &__name
+      font-size: 16px 
+@media (max-width: 575px)
+  .statistics    
+    &-block
+      margin-bottom: 40px
+      &s  
+        flex-direction: column 
+        justify-content: center           
+        align-items: center
+        padding: 60px 0
+    &__image
+      margin-bottom: 0px 
+    &__count          
+      margin-bottom: 0px    
+
+
+
+
+    
+
+  
+
+
