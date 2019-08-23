@@ -931,11 +931,14 @@ img {
 
 /*Подключаем experience*/
 .experience-block {
-  padding: 40px 0;
+  padding: 40px 0 60px;
 }
 
 .experience__title {
   font-size: 46px;
+  margin-top: 35px;
+  letter-spacing: 0.3px;
+  margin-bottom: 42px;
   position: relative;
 }
 
@@ -959,13 +962,13 @@ img {
 .experience-card__image {
   display: block;
   margin: auto;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .experience-card__title {
   display: block;
   font-size: 25px;
-  margin-bottom: 42px;
+  margin-bottom: 36px;
   font-family: 'Roboto Bold', serif;
   font-weight: 700;
 }
@@ -975,13 +978,16 @@ img {
   width: 100%;
   display: block;
   font-size: 15px;
-  margin-bottom: 44px;
+  margin-bottom: 38px;
+  line-height: 24px;
   color: #939393;
 }
 
 .experience-card__link {
+  display: inline-block;
   font-size: 14px;
   margin-bottom: 45px;
+  margin-left: -23px;
   text-transform: uppercase;
   text-decoration: none;
   color: #c3759e;
@@ -1011,6 +1017,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 5px;
 }
 
 @media (min-width: 991px) {
@@ -1061,6 +1068,7 @@ img {
   }
   .experience-cards {
     width: 100%;
+    padding-left: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1096,7 +1104,7 @@ img {
 }
 
 .service-block {
-  padding: 85px 0;
+  padding: 43px 0 136px;
 }
 
 .service-header {
@@ -1114,6 +1122,7 @@ img {
 .service-header__title {
   font-size: 41px;
   position: relative;
+  margin-bottom: 73px;
   font-family: 'Roboto Bold', serif;
   font-weight: 700;
 }
@@ -1128,6 +1137,30 @@ img {
   background-color: #ebebeb;
 }
 
+.service-header__button {
+  list-style: none;
+}
+
+.service-header__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 23px 11px;
+  font-size: 14px;
+  color: #323232;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.service-header__link:hover {
+  background-color: #c3759e;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.service-header__nav {
+  margin-top: -35px;
+}
+
 .service-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,6 +1168,104 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-card {
+  max-width: 23%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 37px;
+}
+
+.service-card:hover {
+  -webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08);
+          box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08);
+}
+
+.service-card_active {
+  color: #ffffff;
+  background-color: #c3759e;
+}
+
+.service-card__image {
+  margin-bottom: 34px;
+  width: 100%;
+}
+
+.service-card__title {
+  display: block;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 13px;
+  color: #c3759e;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.service-card__title_active {
+  color: #ffffff;
+}
+
+.service-card__subtitle {
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.service-card__subtitle:after {
+  position: absolute;
+  content: "";
+  left: 75px;
+  bottom: -21px;
+  width: 53px;
+  height: 2px;
+  background-color: #ebebeb;
+}
+
+.service-card__cost {
+  margin: auto;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.service-card__cost_big {
+  color: #c3759e;
+  font-size: 24px;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.service-card__cost_active {
+  color: #ffffff;
+}
+
+.service-cards {
+  max-height: 529px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

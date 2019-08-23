@@ -1,8 +1,11 @@
 .experience
   &-block
-    padding: 40px 0
+    padding: 40px 0 60px
   &__title     
     font-size: 46px
+    margin-top: 35px
+    letter-spacing: 0.3px
+    margin-bottom: 42px
     position: relative
     &:after
       content: ""
@@ -19,22 +22,25 @@
     &__image
       display: block
       margin: auto
-      margin-bottom: 35px
+      margin-bottom: 32px
     &__title
       display: block
       font-size: 25px  
-      margin-bottom: 42px    
+      margin-bottom: 36px    
       +bold
     &__text
       max-width: 372px
       width: 100%
       display: block
       font-size: 15px
-      margin-bottom: 44px
+      margin-bottom: 38px
+      line-height: 24px  
       color: $experience-text
     &__link      
+      display: inline-block
       font-size: 14px
       margin-bottom: 45px
+      margin-left: -23px
       text-transform: uppercase
       text-decoration: none
       color: $menu-color
@@ -55,7 +61,8 @@
     &s
       display: flex
       justify-content: space-between
-      align-items: center  
+      align-items: center
+      padding-left: 5px  
 
 @media (min-width: 991px)
   .experience
@@ -89,9 +96,10 @@
       margin-bottom: 60px
       &__text
         margin: auto
-        margin-bottom: 30px        
+        margin-bottom: 30px              
       &s 
         width: 100%
+        padding-left: 0px  
         flex-direction: column 
 @media (max-width: 575px) 
   .experience
