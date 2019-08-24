@@ -202,9 +202,15 @@
         &:after                  
           left: 40%
           bottom: -33px 
+      &__text
+        max-width: 400px
+        width: 100%    
 @media (max-width: 767px) 
   .news
     &-content
+      &__link      
+        &:after
+          display: none
       &__card 
         width: 100%  
         padding-bottom: 15px
@@ -224,21 +230,33 @@
 @media (max-width: 575px) 
   .news
     &-block 
-      padding: 25px 0
-    &-content  
+      padding: 25px 0 50px
+    &-content 
+      &__card
+        padding: 29px 20px
+      &__link      
+        &:after
+          display: none 
       &__text
         display: none
     &-wideo
-      display: none  
-    &-wideo        
-      width: 70% 
-    &-content  
-      width: 70%  
+      width: 90%       
       &__title 
+        margin-bottom: 40px
         font-size: 35px   
         &:after                  
-          left: 30%
-          bottom: -33px         
+          display: none 
+      &__block
+        padding: 29px 20px
+        max-height: 400px
+        height: 100%
+    &-content  
+      width: 90%
+      &__title 
+        margin-bottom: 40px
+        font-size: 35px   
+        &:after                  
+          display: none         
 
 
 
