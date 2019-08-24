@@ -52,10 +52,17 @@
     text-align: center
     padding-bottom: 37px
     // &:hover
+    //   background-color: $menu-color       
     //   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
-    &_active
-      color: $white-color
-      background-color: $menu-color     
+    //   color: $white-color
+    //   .service
+    //     &-card
+    //       &__title
+    //         color: $white-color
+    //       &__cost
+    //         &_big
+    //           color: $white-color
+          
     &__image
       margin-bottom: 34px
       width: 100%
@@ -65,9 +72,7 @@
       line-height: 28px
       margin-bottom: 13px
       color: $menu-color
-      +bold
-      &_active
-        color: $white-color
+      +bold      
     &__subtitle
       display: block
       font-size: 15px
@@ -90,9 +95,7 @@
       &_big
         color: $menu-color
         font-size: 24px
-        +bold  
-      &_active
-        color: $white-color
+        +bold        
     &s      
       height: 100%
       display: flex
@@ -109,7 +112,16 @@
           color: $white-color  
     &-card
       &:hover
-       box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)  
+        background-color: $menu-color       
+        box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
+        color: $white-color
+        .service
+          &-card
+            &__title
+              color: $white-color
+            &__cost
+              &_big
+                color: $white-color  
 @media (max-width: 1199px)
   .service    
     &-block

@@ -749,7 +749,7 @@ img {
 
 /*Подключаем baner*/
 .baner {
-  background: #c3759e url("../img/baner/banner-bg.jpg") no-repeat;
+  background: #c3759e url("../img/ban-fon/banner-bg.jpg") no-repeat;
   background-size: 100% auto;
   background-size: cover;
 }
@@ -1187,11 +1187,6 @@ img {
   padding-bottom: 37px;
 }
 
-.service-card_active {
-  color: #ffffff;
-  background-color: #c3759e;
-}
-
 .service-card__image {
   margin-bottom: 34px;
   width: 100%;
@@ -1205,10 +1200,6 @@ img {
   color: #c3759e;
   font-family: 'Roboto Bold', serif;
   font-weight: 700;
-}
-
-.service-card__title_active {
-  color: #ffffff;
 }
 
 .service-card__subtitle {
@@ -1243,10 +1234,6 @@ img {
   font-weight: 700;
 }
 
-.service-card__cost_active {
-  color: #ffffff;
-}
-
 .service-cards {
   height: 100%;
   display: -webkit-box;
@@ -1267,8 +1254,16 @@ img {
     color: #ffffff;
   }
   .service-card:hover {
+    background-color: #c3759e;
     -webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08);
             box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+  }
+  .service-card:hover .service-card__title {
+    color: #ffffff;
+  }
+  .service-card:hover .service-card__cost_big {
+    color: #ffffff;
   }
 }
 
