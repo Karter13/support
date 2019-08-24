@@ -1680,4 +1680,127 @@ img {
 }
 
 /*Подключаем footer*/
+.footer {
+  background-color: #816890;
+}
+
+.footer-block {
+  width: 23%;
+}
+
+.footer-blocks {
+  color: #ffffff;
+  padding: 76px 0 35px;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #846c93;
+  margin-bottom: 34px;
+}
+
+.footer-logo__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer-logo__head {
+  margin-left: 8px;
+  padding-top: 15px;
+  max-width: 164px;
+  width: 100%;
+}
+
+.footer-logo__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.footer-logo__subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.56px;
+}
+
+.footer-logo__text {
+  display: block;
+  max-width: 245px;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 37px;
+  line-height: 24px;
+}
+
+.footer-logo__link {
+  margin-right: 9px;
+}
+
+.footer-company {
+  padding-left: 41px;
+}
+
+.footer-company__title {
+  display: block;
+  font-size: 36px;
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+
+.footer-company__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-company__menu_last {
+  margin-top: 103px;
+}
+
+.footer-company__spis {
+  list-style: none;
+}
+
+.footer-company__link {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 41px;
+  font-family: 'Roboto Bold', serif;
+  font-weight: 700;
+}
+
+.footer-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-footer_left {
+  display: block;
+  font-size: 15px;
+  margin-right: 27px;
+}
+
+.footer-footer_write {
+  display: block;
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */
