@@ -1,0 +1,255 @@
+.news
+  background-color: $contacts-color
+  &-block 
+    padding: 66px 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &-content  
+    width: 49%
+    &__title
+      font-size: 41px
+      margin-bottom: 88px
+      position: relative
+      +bold 
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: -33px      
+        width: 92px
+        height: 3px
+        background-color: $line-color
+    &__card
+      max-height: 486px
+      height: 100%
+      width: 47.8%
+      position: relative
+      padding: 28px 30px 59px 29px
+      background-color: $white-color
+      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
+      &s
+        display: flex
+        justify-content: space-between
+        align-items: flex-start  
+    &__fon
+      position: absolute
+      width: 71px
+      height: 71px
+      top: -25px
+      left: 22px
+      background-color: $menu-color
+      color: $white-color
+      border-radius: 50% 
+      display: flex     
+    &__date
+      text-transform: uppercase
+      text-align: center
+      margin: auto
+      font-size: 14px
+      +bold 
+    &__number
+      font-size: 30px
+    &__image
+      margin-bottom: 24px  
+    &__subtitle
+      display: block
+      color: $title-wideo
+      font-size: 22px
+      line-height: 28px
+      margin-bottom: 20px
+      +bold 
+    &__text
+      display: block
+      font-size: 14px
+      line-height: 24px
+      color: $text-news
+      margin-bottom: 36px
+      max-width: 167px
+      width: 100%
+    &__link      
+      position: relative
+      text-decoration: none
+      color: $menu-color
+      text-transform: uppercase
+      font-size: 14px
+      +bold 
+      &:after   
+        content: ""
+        position: absolute
+        width: 44px
+        height: 2px
+        left: 15px  
+        bottom: -10px                 
+        background-color: $menu-color
+
+  &-wideo 
+    width: 49%
+    &__title
+      font-size: 41px
+      margin-bottom: 88px
+      position: relative
+      +bold 
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: -33px      
+        width: 92px
+        height: 3px
+        background-color: $line-color 
+    &__block
+      max-height: 486px
+      height: 100%
+      position: relative
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      padding: 29px 30px 33px 29px 
+      background-color: $white-color
+      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
+    &__ram
+      width: 528px        
+      height: 328px 
+      margin-bottom: 26px  
+    &__network   
+      display: flex
+      justify-content: center
+      align-items: center   
+      position: absolute
+      width: 196px
+      height: 47px
+      background-color: $white-color      
+      left: 50%  
+      margin-left: -98px       
+      bottom: 105px 
+      border-radius: 24px
+    &__link
+      margin-right: 13px    
+    &__subtitle
+      color: $title-wideo
+      font-size: 22px
+      margin-bottom: 30px      
+      letter-spacing: -0.4px
+      margin-left: -10px
+      +bold 
+    &__menu
+      display: flex
+      justify-content: space-between
+      align-items: center 
+    &_button
+      letter-spacing: -0.5px
+      font-size: 14px
+      text-transform: uppercase
+      color: $wideo-button
+      font-weight: 600      
+    &_previous 
+      position: relative       
+      margin-right: 18px
+      &:after
+        position: absolute
+        content: ""
+        width: 2px
+        height: 12px
+        right: -11px
+        bottom: 3px
+        background-color: $wideo-button
+
+
+@media (min-width: 991px)   
+  .news
+    &-content
+      &__card      
+        &:hover        
+          background-color: $menu-color
+          color: $white-color
+          .news
+            &-content 
+              &__text
+                color: $white-color
+              &__link
+                color: $white-color
+                &:after
+                  color: $white-color
+@media (max-width: 1199px)  
+  .news
+    &-wideo 
+      &__ram
+        width: 433px
+        height: 315px 
+@media (max-width: 991px) 
+  .news
+    &-wideo        
+      width: 70% 
+      &__title    
+        &:after                  
+          left: 40%
+          bottom: -33px
+      &__ram
+        max-width: 528px  
+        width: 100%      
+        max-height: 328px           
+    &-block
+      width: 100%
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+    &-content  
+      width: 70%  
+      &__title    
+        &:after                  
+          left: 40%
+          bottom: -33px 
+@media (max-width: 767px) 
+  .news
+    &-content
+      &__card 
+        width: 100%  
+        padding-bottom: 15px
+        margin-bottom: 40px     
+        &s          
+          width: 100%
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          text-align: center
+      &__text
+        max-width: 400px
+        width: 100%
+      &__image
+        max-width: 320px
+        width: 100%
+@media (max-width: 575px) 
+  .news
+    &-block 
+      padding: 25px 0
+    &-content  
+      &__text
+        display: none
+    &-wideo
+      display: none  
+    &-wideo        
+      width: 70% 
+    &-content  
+      width: 70%  
+      &__title 
+        font-size: 35px   
+        &:after                  
+          left: 30%
+          bottom: -33px         
+
+
+
+
+
+              
+          
+
+
+       
+    
+
+
+
