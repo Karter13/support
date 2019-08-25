@@ -99,7 +99,28 @@
         <div class="comments-block">
           <h2 class="comments__title">Отзывы наших клиентов</h2>
           <!-- /.comments__title -->
-          <div class="comments__cards owl-carousel" id="carusel">
+          <div class="comments__cards slider" id="slider">
+
+
+            <div class="comments__card">
+              <div class="comments__content">
+                <img src="img/n-reviews/stars.png" alt="stars" class="comments__rating">
+                <p class="comments__text">С другой стороны консультация с широким активом в значительной степени
+                  обуславливает создание направлений прогрессивного
+                  развития. Значимость</p>
+                <div class="comments__rombus">
+                  <img src="img/n-reviews/figure_1.png" alt="figure">
+                </div>
+              </div>
+
+              <div class="comments-author">
+                <img src="img/n-reviews/gerl_2.png" alt="gerl" class="comments-author__foto">
+                <div class="comments-author__data">
+                  <span class="comments-author__name">Ольга Петрова</span>
+                  <span class="comments-author__job">Web-дизайнер</span>
+                </div>
+              </div>
+            </div>
 
 
             <div class="comments__card">
@@ -161,6 +182,7 @@
                 </div>
               </div>
             </div>
+
           </div>
           <!-- /.comments__cards -->
         </div>
@@ -299,7 +321,6 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
@@ -307,47 +328,29 @@
 
   <script>
 
-    // $(document).ready(function () {
-    //   $('#carusel').owlCarousel({
-    //     items: 5,
-    //     loop: true,
-    //     nav: true
-    //     responsive: {
-    //       0: {
-    //         items: 1
-    //       },
-    //       600: {
-    //         items: 3
-    //       },
-    //       1000: {
-    //         items: 5
-    //       }
-    //     }
-    //   })
-    // });
 
 
-    // $(document).ready(function () {
-    //   $(".slider").slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     prevArrow: (""),
-    //     nextArrow: (""),
-    //     responsive: [{
-    //       breakpoint: 1200,
-    //       settings: {
-    //         slidesToShow: 2,
-    //         slidesToScroll: 1
-    //       }
-    //     }, {
-    //       breakpoint: 810,
-    //       settings: {
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1
-    //       }
-    //     }]
-    //   });
-    // });
+    $(document).ready(function () {
+      $(".slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: (""),
+        nextArrow: (""),
+        responsive: [{
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      });
+    });
 
   </script>
 
