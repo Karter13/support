@@ -2298,4 +2298,113 @@ img {
     display: none;
   }
 }
+
+/*Подключаем comments*/
+.comments {
+  background: #c3759e url("../img/n-reviews/2-layers.png") no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+}
+
+.comments-block {
+  padding: 98px 0 183px;
+}
+
+.comments__title {
+  position: relative;
+  text-align: center;
+  font-size: 41px;
+  margin-bottom: 100px;
+  color: #ffffff;
+}
+
+.comments__title:after {
+  position: absolute;
+  content: "";
+  width: 92px;
+  height: 3px;
+  left: 45%;
+  bottom: -42px;
+  background-color: #ffffff;
+}
+
+.comments__card {
+  width: 32%;
+}
+
+.comments__cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.comments__content {
+  position: relative;
+  padding: 55px 42px 55px 35px;
+  background-color: #f7f7f7;
+  margin-bottom: 41px;
+}
+
+.comments__rombus {
+  position: absolute;
+  bottom: -20px;
+  left: 33px;
+}
+
+.comments__rating {
+  margin-bottom: 32px;
+}
+
+.comments__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #979797;
+}
+
+.comments-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 21px;
+}
+
+.comments-author__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 21px;
+}
+
+.comments-author__name {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.comments-author__job {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */
