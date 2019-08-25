@@ -3,23 +3,24 @@
   background-size: 100% auto
   background-size: cover
   &-block
-    padding: 98px 0 183px
-  &__title    
+    padding: 60px 0 172px
+  &__title 
+    letter-spacing: -0.3px   
     position: relative
     text-align: center
     font-size: 41px
-    margin-bottom: 100px
+    margin-bottom: 95px
     color: $white-color
     &:after
       position: absolute
       content: ""
       width: 92px
       height: 3px
-      left: 45%
-      bottom: -42px
+      left: 46%
+      bottom: -38px
       background-color: $white-color
   &__card
-    width: 32%    
+    width: 31.5%    
     &s
       width: 100%
       display: flex
@@ -27,7 +28,7 @@
       align-items: flex-start
   &__content
     position: relative
-    padding: 55px 42px 55px 35px    
+    padding: 55px 38px 39px 35px    
     background-color: $contacts-color 
     margin-bottom: 41px    
   &__rombus    
@@ -35,7 +36,7 @@
     bottom: -20px
     left: 33px
   &__rating
-    margin-bottom: 32px 
+    margin-bottom: 6px 
   &__text
     font-size: 15px
     line-height: 24px
@@ -59,6 +60,46 @@
       font-size: 14px
       color: $white-color
       font-weight: 600
+
+@media (max-width: 1199px) 
+  .comments
+    &-block
+      padding: 50px 0 150px   
+@media (max-width: 991px) 
+  .comments
+    &-block
+      padding: 40px 0 130px  
+    &__content      
+      padding: 38px 38px 24px 35px 
+@media (max-width: 767px)
+  .comments 
+    &__title    
+      font-size: 35px
+      &:after       
+        left: 40%
+        bottom: -38px
+    &__card
+      width: 60%  
+      margin-bottom: 45px  
+      &s
+        flex-direction: column
+        justify-content: center
+        align-items: center  
+@media (max-width: 575px)
+  .comments 
+    &-block
+      padding: 30px 0 60px 
+    &__title    
+      font-size: 33px
+      margin-bottom: 50px
+      &:after       
+        left: 35%
+        bottom: -20px 
+    &__card
+      width: 90%  
+      margin-bottom: 30px   
+                     
+
 
 
 
