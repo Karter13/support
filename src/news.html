@@ -69,7 +69,7 @@
                                 <li class="navbar-block__paragraph">
                                     <a class="navbar__paragraph" href="reviews.html">отзывы</a>
                                 </li>
-                                <li class="navbar-block__paragraph">
+                                <li id="contacts" class="navbar-block__paragraph">
                                     <a class="navbar__paragraph" href="#">контакты</a>
                                 </li>
                             </ul>
@@ -80,7 +80,7 @@
                         </a>
                     </div>
 
-                    <a class="navbar__phone" href="#">
+                    <a id="phoner" class="navbar__phone" href="#">
                         <img class="navbar-block__phone" src="img/header/phone_2.png" alt="phone">
                     </a>
 
@@ -136,14 +136,31 @@
 
                         <div class="news-wideo__block">
 
-                            <!-- <div class="news-wideo__wideo"> -->
-                            <div class="news-wideo__ram">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tVapn38szMY"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <div class="news-wideo__wideo slider">
+
+                                <div class="news-wideo__ram">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tVapn38szMY"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                                <div class="news-wideo__ram">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f8GRHuFrzYo"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                                <div class="news-wideo__ram">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ekwv-G8A3H8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+
+
                             </div>
-                            <!-- </div> -->
 
                             <div class="news-wideo__network">
                                 <a href="#" class="news-wideo__link"><img src="img/news/wk_1.png" alt="wk"></a>
@@ -198,6 +215,37 @@
         </div>
         <!-- /.connection -->
     </main>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close">X</button>
+
+            <h2 class="section-title modal__title">
+                Заказать обратный звонок
+            </h2>
+            <!-- /.section-title -->
+            <span class="section-subtitle modal__subtitle">
+                Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <!-- /.section-subtitle -->
+            <form action="#" id="modal-form" class="modal__form">
+                <input type="text" id="modal-clean1" name="username" class="input modal__input modal__name"
+                    placeholder="Ваше имя" required>
+                <input type="tel" id="modal-clean2" name="phone" class="input modal__input modal__phone phone"
+                    placeholder="Ваш телефон" required>
+                <input type="email" id="modal-clean2" name="email" class="input modal__input modal__email email"
+                    placeholder="Ваш почта" required>
+                <button class="button modal__button">
+                    отправить данные
+                </button>
+            </form>
+
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
 
     <footer class="footer">
         <div class="container">
@@ -302,8 +350,38 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+
+
+    <script>
+
+
+
+        $(document).ready(function () {
+            $(".slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: (".news-wideo_previous"),
+                nextArrow: (".news-wideo_next"),
+                responsive: [{
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 650,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+    </script>
 
 
 
