@@ -1,39 +1,53 @@
 
-// $(document).ready(function () {
-//     let button = $("#button");
-//     let modal = $("#modal");
-//     let close = $("#close");
-//     let cardLink = $(".card__link");
-//     let left = $(".modal-column_left");
-//     let modalof = $(".modal-dialog");
+$(document).ready(function () {
+  let modal = $("#modal");
+  let close = $("#close");
+  let contacts = $("#contacts");
+  let phoner = $("#phoner");
+  let details = $(".experience-card__link");
+  let footercont = $(".footer-company__link");
 
 
-//     /*Для кнопки Перезвони мне*/
-//     button.on("click", function () {
-//         left.addClass("modal_left");
-//         modalof.css({ "max-width": "500px" });
-//         modal.addClass("modal_activ");
-//     });
+  /*Для кнопки Перезвони мне*/
+  contacts.on("click", function () {
+    modal.addClass("modal_activ");
+  });
 
-//     /*Для блок price*/
-//     cardLink.on("click", function (event) {
-//         event.preventDefault();
-//         modal.addClass("modal_activ");
-//         let target = $(this).attr("data-target");
-//         $(".modal-content").load(target + ".html");
-//     });
+  phoner.on("click", function () {
+    modal.addClass("modal_activ");
+  });
+
+  details.on("click", function () {
+    modal.addClass("modal_activ");
+  });
+
+  footercont.on("click", function () {
+    modal.addClass("modal_activ");
+  });
 
 
-//     close.on("click", function () {
-//         modal.removeClass("modal_activ");
-//         left.removeClass("modal_left");
-//         modalof.css({ "max-width": "50%" });
-//     });
+  // /*Для блок price*/
+  // cardLink.on("click", function (event) {
+  //   event.preventDefault();
+  //   modal.addClass("modal_activ");
+  //   let target = $(this).attr("data-target");
+  //   $(".modal-content").load(target + ".html");
+  // });
 
+
+  close.on("click", function () {
+    modal.removeClass("modal_activ");
+  });
+
+});
+
+
+
+// close.on("click", function () {
+//   modal.removeClass("modal_activ");
+//   left.removeClass("modal_left");
+//   modalof.css({ "max-width": "50%" });
 // });
-
-
-
 
 
 
