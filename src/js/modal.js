@@ -7,7 +7,7 @@ $(document).ready(function () {
   let contacts = $("#contacts");
   let phoner = $("#phoner");
   let details = $(".experience-card__link");
-  let footercont = $(".footer-company__link");
+  let footercont = $(".footer-company__link_active");
 
 
   /*Для кнопки Перезвони мне*/
