@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
   let modal = $("#modal");
+  let closesuccessmodal = $("#closesuccessmodal");
+  let modale = $(".modale");
   let close = $("#close");
   let contacts = $("#contacts");
   let phoner = $("#phoner");
@@ -26,6 +28,7 @@ $(document).ready(function () {
   });
 
 
+
   // /*Для блок price*/
   // cardLink.on("click", function (event) {
   //   event.preventDefault();
@@ -37,6 +40,10 @@ $(document).ready(function () {
 
   close.on("click", function () {
     modal.removeClass("modal_activ");
+  });
+
+  closesuccessmodal.on("click", function () {
+    modale.removeClass("modale_active");
   });
 
 });
