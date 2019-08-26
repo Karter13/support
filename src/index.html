@@ -319,11 +319,11 @@
             <!-- /.section-subtitle -->
             <form action="#" method="POST" id="modal-form" class="modal__form">
                 <input type="text" id="modal-clean1" name="username" class="input modal__input modal__name"
-                    placeholder="Ваше имя" required>
+                    placeholder="Ваше имя">
                 <input type="tel" id="modal-clean2" name="phone" class="input modal__input modal__phone phone"
-                    placeholder="Ваш телефон" required>
+                    placeholder="Ваш телефон">
                 <input type="email" id="modal-clean3" name="email" class="input modal__input modal__email email"
-                    placeholder="Ваша почта" required>
+                    placeholder="Ваша почта">
                 <button class="button modal__button">
                     отправить данные
                 </button>
@@ -470,7 +470,7 @@
 
             $("#modal-form").validate({
                 rules: {
-                    name: {
+                    username: {
                         required: true,
                         minlength: 2,
                         maxlength: 15,
@@ -484,7 +484,7 @@
                     }
                 },
                 messages: {
-                    name: {
+                    username: {
                         required: "Заполните Имя",
                         minlength: "Введите больше 2 символов",
                         maxlength: "Введите меньше 15 символов",
@@ -507,7 +507,9 @@
                         type: 'post',
                         data: $(form).serialize(),
                         success: function (data) {
+
                             yaCounter55065517.reachGoal('form');
+
                             // Очистка полей формы
                             $('#modal-clean1').val('');
                             $('#modal-clean2').val('');
