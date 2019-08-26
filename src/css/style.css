@@ -785,7 +785,7 @@ img {
 @media (max-width: 991px) {
   .navbar-menu.navbar-menu_active {
     display: block;
-    position: fixed;
+    position: absolute;
     background-color: #9e96bc;
     top: 174px;
     right: 0px;
@@ -2466,6 +2466,8 @@ iframe {
 }
 
 .comments__card {
+  border: none;
+  outline: none;
   margin-right: 30px;
 }
 

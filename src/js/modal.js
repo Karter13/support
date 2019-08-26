@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+
   let modal = $("#modal");
   let closesuccessmodal = $("#closesuccessmodal");
   let modale = $(".modale");
@@ -8,6 +9,9 @@ $(document).ready(function () {
   let phoner = $("#phoner");
   let details = $(".experience-card__link");
   let footercont = $(".footer-company__link_active");
+  let banbutton = $(".baner__button");
+  let linkferst = $(".connection__link_ferst");
+  let linklast = $(".connection__link_last");
 
 
   /*Для кнопки Перезвони мне*/
@@ -23,9 +27,25 @@ $(document).ready(function () {
     modal.addClass("modal_activ");
   });
 
+  linkferst.on("click", function () {
+    modal.addClass("modal_activ");
+  });
+
+  linklast.on("click", function () {
+    modal.addClass("modal_activ");
+  });
+
   footercont.on("click", function () {
     modal.addClass("modal_activ");
   });
+
+  banbutton.on("click", function () {
+    modal.addClass("modal_activ");
+  });
+
+
+
+
 
 
 
