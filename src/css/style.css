@@ -931,6 +931,10 @@ img {
   font-weight: 700;
 }
 
+.baner__button:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1300px) {
   .baner-block {
     padding-top: 20%;
@@ -2922,6 +2926,21 @@ iframe {
   font-weight: 700;
   padding: 15px 25px 15px 25px;
   margin-bottom: 60px;
+}
+
+#modal-clean1-error {
+  margin-top: -20px;
+  line-height: 20px;
+}
+
+#modal-clean2-error {
+  margin-top: -20px;
+  line-height: 20px;
+}
+
+#modal-clean3-error {
+  margin-top: -20px;
+  line-height: 20px;
 }
 
 @media (max-width: 575px) {
