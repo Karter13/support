@@ -1937,10 +1937,17 @@ img {
 }
 
 @media (max-width: 1199px) {
-  .footer-company_last {
+  .footer-logo {
+    margin-right: 30px;
+  }
+  .footer-logo__text {
     display: none;
   }
+  .footer-company_last {
+    padding: 0;
+  }
   .footer-company__title {
+    font-size: 30px;
     margin-bottom: 30px;
   }
   .footer-company__link {
@@ -1952,6 +1959,9 @@ img {
   .footer-company-content {
     margin-bottom: 25px;
   }
+  .footer-company__menu_last {
+    margin-top: 77px;
+  }
   .footer-block {
     width: 30%;
   }
@@ -1961,6 +1971,9 @@ img {
 }
 
 @media (max-width: 991px) {
+  .footer-logo {
+    margin-right: 0px;
+  }
   .footer-logo__text {
     display: none;
   }
@@ -1970,6 +1983,9 @@ img {
   }
   .footer-blocks {
     padding: 40px 0 20px;
+  }
+  .footer-company_last {
+    display: none;
   }
   .footer-company_visible {
     padding-left: 19px;
