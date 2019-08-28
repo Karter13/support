@@ -64,7 +64,7 @@
                   <a class="navbar__paragraph" href="index.html">главная</a>
                 </li>
                 <li class="navbar-block__paragraph">
-                  <a class="navbar__paragraph" href="#who">о компании </a>
+                  <a class="navbar__paragraph" href="index.html#who">о компании </a>
                 </li>
                 <li class="navbar-block__paragraph">
                   <a class="navbar__paragraph" href="news.html">новости</a>
@@ -267,8 +267,8 @@
   <div class="modale " id="modale-succes">
     <div class="modale-success">
       <button class="modale__close" id="closesuccessmodal">&times;</button>
-      <span class="block treatment">Спасибо, <span id="sucess-user">12345посетитель</span>!</span>
-      <span>Наш менеджер перезвонит Вам&nbsp;в&nbsp;течении 60&nbsp;секунд </span>
+      <span class="block treatment">Спасибо! <br> <span id="sucess-user">Уважаемый посетитель!</br></span>
+        <span>Наш менеджер перезвонит Вам в течении 60секунд </span>
     </div>
   </div>
 
@@ -315,7 +315,7 @@
             </ul>
 
           </div>
-          <div class="footer-block footer-company footer-company_visible">
+          <div class="footer-block footer-company footer-company_visible footer-company__visible_center">
             <span class="footer-company__title">
               Наши услуги
             </span>
@@ -390,7 +390,7 @@
 
       $("#modal-form").validate({
         rules: {
-          name: {
+          username: {
             required: true,
             minlength: 2,
             maxlength: 15,
@@ -404,7 +404,7 @@
           }
         },
         messages: {
-          name: {
+          username: {
             required: "Заполните Имя",
             minlength: "Введите больше 2 символов",
             maxlength: "Введите меньше 15 символов",

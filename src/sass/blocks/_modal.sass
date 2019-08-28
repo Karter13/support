@@ -27,6 +27,9 @@
     background-color: $futer-color
     border-radius: 25px   
     &__close
+      display: flex
+      justify-content: center
+      align-items: center
       border: none
       position: absolute
       top: 10px
@@ -34,6 +37,8 @@
       width: 30px      
       height: 30px   
       border-radius: 50%   
+      cursor: pointer
+      padding: 0
   &__title     
     text-align: center
     display: block
@@ -79,6 +84,7 @@
     +bold
     padding: 15px 25px 15px 25px
     margin-bottom: 60px 
+    cursor: pointer
 #modal     
   &-clean1
     &-error

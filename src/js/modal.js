@@ -10,6 +10,7 @@ $(document).ready(function () {
   let details = $(".experience-card__link");
   let footercont = $(".footer-company__link_active");
   let banbutton = $(".baner__button");
+  let ban1button = $(".baner1__button")
   let linkferst = $(".connection__link_ferst");
   let linklast = $(".connection__link_last");
 
@@ -42,6 +43,11 @@ $(document).ready(function () {
   banbutton.on("click", function () {
     modal.addClass("modal_activ");
   });
+
+  ban1button.on("click", function () {
+    modal.addClass("modal_activ");
+  });
+
 
 
 

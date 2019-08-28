@@ -76,8 +76,19 @@
     &-company      
       &_last
         display: none
+      &__title
+        margin-bottom: 30px
+      &__link
+        margin-bottom: 15px
+      &__visible
+        &_center
+          padding: 0
+      &-content 
+        margin-bottom: 25px   
     &-block
-      width: 30%   
+      width: 30%  
+      &s
+        padding: 45px 0 20px
 @media (max-width: 991px) 
   .footer
     &-logo
@@ -88,17 +99,24 @@
         letter-spacing: 2px  
     &-block
       &s        
-        padding: 55px 0 35px 
+        padding: 40px 0 20px
     &-company
       &_visible
         padding-left: 19px
         display: flex
         flex-direction: column
         justify-content: center
-        padding-left: 36px
-        // align-items: center
+        padding-left: 36px       
+      &__visible
+        &_center
+          padding: 0
       &__title
-        font-size: 29px
+        font-size: 29px     
+        margin-bottom: 20px
+      &__link
+        margin-bottom: 10px  
+      &-content 
+        margin-bottom: 15px   
 @media (max-width: 767px)
   .footer
     &-block
@@ -115,10 +133,11 @@
     &-company
       &_visible
         padding-left: 0
+        margin: 0
       &__title
-        margin-bottom: 30px
-      &__link
         margin-bottom: 20px
+      &__link
+        margin-bottom: 15px
     &-logo
       &__logo        
         justify-content: center
@@ -126,6 +145,11 @@
         margin-bottom: 15px
       &__head           
         width: 100%   
+    &-footer      
+      &_left
+        font-size: 13px        
+      &_write
+        font-size: 13px    
 @media (max-width: 575px)   
   .footer
     &-block      
@@ -133,7 +157,9 @@
         padding: 40px 0 20px 
     &-company      
       &__title
-        font-size: 28px    
+        font-size: 28px 
+      &_visible
+        margin: 0     
     &-footer
       justify-content: center
       align-items: center
